@@ -1,5 +1,8 @@
 # wangyiyun-app
-
+### 网易云后台链接（首先配置）
+```
+https://gitlab.com/Binaryify/neteasecloudmusicapi.git
+```
 ## Project setup
 ```
 npm install
