@@ -3,6 +3,8 @@
 ## Project setup
 ```
 npm install
+如果报错，使用以下指令
+npm install --force
 ```
 
 ### Compiles and hot-reloads for development
