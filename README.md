@@ -3,7 +3,9 @@
 ## Project setup
 ```
 npm install
-如果报错，使用以下指令
+```
+### 如果出现报错
+```
 npm install --force
 ```
 
