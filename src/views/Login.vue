@@ -96,11 +96,11 @@ function isMobile(mobile) {
 function doLogin() {
   if (!isMobile(datas.phone) || datas.password.trim() == "") {
     console.log(" 格式不正确！");
-    Notify({
-      type: "warning",
-      message: "手机号或者密码格式不正确！",
-      duration: 1000,
-    });
+    // Notify({
+    //   type: "warning",
+    //   message: "手机号或者密码格式不正确！",
+    //   duration: 1000,
+    // });
   } else {
     store
       .dispatch("getLogin", {
@@ -110,20 +110,20 @@ function doLogin() {
       .then((res) => {
         console.log(res);
         if (res.code == 200) {
-          Notify({
-            type: "success",
-            message: "登录成功！",
-            duration: 1000,
-          });
+          // Notify({
+          //   type: "success",
+          //   message: "登录成功！",
+          //   duration: 1000,
+          // });
           store.commit("updateIsLogin", true);
           store.commit("updateToken", "1111");
           router.push("/userInfo");
         } else {
-          Notify({
-            type: "warning",
-            message: "手机号或者密码格式不正确！!!!!!!!",
-            duration: 1000,
-          });
+          // Notify({
+          //   type: "warning",
+          //   message: "手机号或者密码格式不正确！!!!!!!!",
+          //   duration: 1000,
+          // });
           store.commit("updateIsLogin", true);
           store.commit("updateToken", "1111");
           router.push("/userInfo");
